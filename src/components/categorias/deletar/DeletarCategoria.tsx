@@ -3,7 +3,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import Categoria from "../../../models/Categoria";
 import { deletar, listar } from "../../../services/Service";
 import { RotatingLines } from "react-loader-spinner";
-import ListarCategorias from "../listar/ListarCategorias";
 
 function DeletarCategoria() {
     const navigate = useNavigate();
@@ -56,7 +55,7 @@ function DeletarCategoria() {
                     <p className="p-8 text-3xl bg-blue-100 h-full">{categoria.nome}</p>
 
                     <div className="flex">
-                        <button className="rounded text-white bg-blue-400 hover:bg-blue-500 w-1/2 py-2 mx-auto block" onClick={retornar}>
+                        <button className="text-white bg-blue-400 hover:bg-blue-500 w-full py-2" onClick={retornar}>
                             Não
                         </button>
 
