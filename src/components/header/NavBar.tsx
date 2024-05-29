@@ -1,4 +1,5 @@
 import { MagnifyingGlass, Pill, ShoppingCartSimple, User } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
@@ -6,7 +7,7 @@ function NavBar() {
             <div className="w-full flex justify-between bg-gradient-to-r from-blue-300 to-blue-400 text-black p-4">
                 <div className="flex justify-center">
                     <Pill size={32} weight="thin" />
-                    <span className="text-lg font-[Lora] font-bold uppercase hover:text-blue-500 cursor-pointer">PharmaVida</span>
+                    <Link to="/home" className="text-lg font-[Lora] font-bold uppercase hover:text-blue-500 cursor-pointer">PharmaVida</Link>
                 </div>
 
                 <div className="flex justify-center relative">
@@ -20,7 +21,8 @@ function NavBar() {
 
                 <div className="flex gap-3">
                     <p className="hover:text-blue-500">Produtos</p>
-                    <p className="hover:text-blue-500">Categorias</p>
+                    <Link to="/categorias" className="hover:text-blue-500">Categorias</Link>
+                    <Link to="/cadcategoria" className="hover:text-blue-500">Cadastrar categorias</Link>
                     <div className="hover:text-blue-500"><User size={32} weight="thin" /></div>
                     <div className="hover:text-blue-500"><ShoppingCartSimple size={32} weight="thin" /></div>
                 </div>
