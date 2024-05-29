@@ -1,3 +1,5 @@
+import ListarCategorias from "../../components/categorias/listar/ListarCategorias";
+
 function Home() {
     return (
         <>
@@ -14,8 +16,9 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <ListarCategorias />
         </>
-    );
+    )
 }
 
 export default Home;
